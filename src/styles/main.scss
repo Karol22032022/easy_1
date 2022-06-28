@@ -1,0 +1,17 @@
+
+:root{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-eberhard-grossgasteiger-572897.jpg?alt=media&token=c90949f5-485c-4453-8ba1-495cf04865a9");
+   background-size: cover;
+}
+
+.main_section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+&__div_one{
+  background-color: deepskyblue;
+}
+
+}
