@@ -4,20 +4,11 @@
    background-size: cover;
 text-decoration: none;
 }
-@mixin buttons{
-  font-family: Goldman, cursive ;
-  color: lightgrey;
 
+
+.apollo_param:hover, .sojuz_param:hover, .spacex_param:hover{
+  color: gray;
 }
-
-//.button_apollo, .button_sojuz,.button_spacex{
-
-
-
-
-
-
-
 
 @mixin standard{
   width: 20rem;
@@ -45,7 +36,7 @@ text-decoration: none;
     }
     100% {
 
-      transform: translateY(+100px);
+      transform: translateY(+50px);
     }
   }
 }
@@ -63,7 +54,6 @@ text-decoration: none;
 }
   &__div_one:hover{
     @include hover;
-
     }
 &__div_two{
 @include standard;
