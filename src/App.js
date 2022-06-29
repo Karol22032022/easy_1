@@ -3,6 +3,9 @@ import {Main} from "./components/main";
 import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 import {ContactOne} from "./components/contact";
 import "./styles/app.scss";
+import {ApolloOne} from "./components/apollo";
+import {SojuzApollo} from "./components/apollo_one";
+import {Spacex} from "./components/spacex";
 
 function App() {
 
@@ -23,6 +26,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/contact" element={<ContactOne />} />
+                    <Route path="/apollo" element={<ApolloOne/>}/>
+                    <Route path="/sojuz-apollo" element={<SojuzApollo/>}/>
+                    <Route path="/spacex" element={<Spacex/>}/>
                 </Routes>
 
             </Router>

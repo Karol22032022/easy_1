@@ -24,7 +24,7 @@ import {Button, colors} from "@mui/material";
                    </Button>
                  </div>
                  <div className="main_section__div_two" style={{display:'flex',
-                     justifyContent:'center', alignItems:'flex-end'}}>
+                     justifyContent:'center', alignItems:'flex-start'}}>
                      <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem'}}
                          className="button_sojuz" onClick={ ()=> navigate("/sojuz-apollo")}>
                          <p className="sojuz_param">Sojuz-Apollo</p>
