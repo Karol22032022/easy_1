@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/main.scss";
 import {BrowserRouter, useNavigate} from "react-router-dom";
-import { Button } from "@mui/material";
+import {Button, colors} from "@mui/material";
 
 
 
@@ -10,22 +10,32 @@ import { Button } from "@mui/material";
 
 
 
-
          return (
 
              <section className="main_section">
 
-                 <div className="main_section__div_one">
-                   <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
-                       className="button_apollo" onClick={ ()=> navigate("/apollo")}>Apollo 13</Button>
+                 <div className="main_section__div_one" style={{display:'flex',
+                     justifyContent:'center', alignItems:'flex-start'}}>
+                   <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem'}}
+                       className="main_section__button_apollo" onClick={ ()=> navigate("/apollo")}>
+                       <p className="apollo_param"> Apollo 13</p>
+
+
+                   </Button>
                  </div>
-                 <div className="main_section__div_two">
-                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
-                         className="button_sojuz" onClick={ ()=> navigate("/sojuz-apollo")}>Sojuz-Apollo</Button>
+                 <div className="main_section__div_two" style={{display:'flex',
+                     justifyContent:'center', alignItems:'flex-end'}}>
+                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem'}}
+                         className="button_sojuz" onClick={ ()=> navigate("/sojuz-apollo")}>
+                         <p className="sojuz_param">Sojuz-Apollo</p>
+                         </Button>
                  </div>
-                 <div className="main_section__div_three">
-                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
-                         className="button_spacex" onClick={ ()=> navigate("/spacex")}>Space-X</Button>
+                 <div className="main_section__div_three" style={{display:'flex',
+                     justifyContent:'center', alignItems:'flex-start'}}>
+                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem'}}
+                         className="button_spacex" onClick={ ()=> navigate("/spacex")}>
+                         <p className="spacex_param">Space-X</p>
+                         </Button>
                  </div>
              </section>
 
