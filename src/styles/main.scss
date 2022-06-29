@@ -3,7 +3,38 @@
   background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-eberhard-grossgasteiger-572897.jpg?alt=media&token=c90949f5-485c-4453-8ba1-495cf04865a9");
    background-size: cover;
 }
+@mixin standard{
+  width: 20rem;
+  height: 25rem;
+  background-size: cover;
+}
+@mixin hover{
+  width: 20.5rem;
+  height: 25.5rem;
 
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  @-webkit-keyframes slide-top {
+    0% {
+
+      transform: translateY(0);
+    }
+    100% {
+
+      transform: translateY(-100px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+
+      transform: translateY(0);
+    }
+    100% {
+
+      transform: translateY(-100px);
+    }
+  }
+}
 .main_section{
   display: flex;
   flex-direction: row;
@@ -11,7 +42,29 @@
   align-items: center;
 
 &__div_one{
-  background-color: deepskyblue;
-}
+  @include standard;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-pixabay-355956.jpg?alt=media&token=aca7024d-dfd1-4df0-8261-0cf017e15902");
 
 }
+  &__div_one:hover{
+    @include hover;
+
+    }
+&__div_two{
+@include standard;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-pixabay-41005.jpg?alt=media&token=e8a2427f-53fc-41bf-ad95-5e6d9d660f21");
+
+}
+  &__div_two:hover{
+    @include hover;
+  }
+
+  &__div_three{
+    @include standard;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-dylan-spangler-12236235.jpg?alt=media&token=e4bc8535-22c4-4a00-b2ba-37fb3d6b1145");
+  }
+  &__div_three:hover{
+    @include hover;
+  }
+
+  }
