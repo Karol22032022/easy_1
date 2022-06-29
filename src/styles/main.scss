@@ -2,7 +2,23 @@
 :root{
   background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-eberhard-grossgasteiger-572897.jpg?alt=media&token=c90949f5-485c-4453-8ba1-495cf04865a9");
    background-size: cover;
+text-decoration: none;
 }
+@mixin buttons{
+  font-family: Goldman, cursive ;
+  color: lightgrey;
+
+}
+
+//.button_apollo, .button_sojuz,.button_spacex{
+
+
+
+
+
+
+
+
 @mixin standard{
   width: 20rem;
   height: 25rem;
@@ -16,11 +32,9 @@
   animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   @-webkit-keyframes slide-top {
     0% {
-
       transform: translateY(0);
     }
     100% {
-
       transform: translateY(-100px);
     }
   }
@@ -31,11 +45,12 @@
     }
     100% {
 
-      transform: translateY(-100px);
+      transform: translateY(+100px);
     }
   }
 }
 .main_section{
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -68,3 +83,5 @@
   }
 
   }
+
+

@@ -1,37 +1,32 @@
 import React from "react";
 import {Main} from "./components/main";
-import {Head_Top} from "./components/header";
-import {Footer_One} from "./components/footer";
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
-import {Contact_One} from "./components/contact";
-
+import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import {ContactOne} from "./components/contact";
+import "./styles/app.scss";
 
 function App() {
-  return (
-    <>
-        <header className="header_top">
-            <h1>SpaceOne</h1>
-            <BrowserRouter>
 
-                <nav>
-                    <Link to="/contact" >Contact</Link>
+
+
+    return (
+
+              <Router>
+
+                <nav className={"app_nav"}>
+
+                    <Link className={"app__name"} to="/">SpaceOne</Link>
+                    <Link className={"app__link_one"} to="/" >Home</Link>
+                    <Link className={"app__link_two"} to="/contact" >Contact</Link>
 
                 </nav>
 
-
-
                 <Routes>
-                    <Route path="/contact" element={<Contact_One />} />
+                    <Route path="/" element={<Main />} />
+                    <Route path="/contact" element={<ContactOne />} />
                 </Routes>
 
-            </BrowserRouter>
-        </header>
+            </Router>
 
-      <Main/>
-      <Footer_One/>
-
-
-    </>
   );
 }
 

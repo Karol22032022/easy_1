@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-export function Contact_One(){
+export function ContactOne(){
     return(
         <section>
             <p>CONTACT SITE</p>

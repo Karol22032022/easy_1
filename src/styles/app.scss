@@ -1,0 +1,56 @@
+
+
+@mixin one{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-evenly;
+  align-items: center;
+  color: lightgrey;
+  font-family: 'Goldman', cursive;
+}
+
+
+.app_nav,.app__name,.app__link_one,.app__link_two{
+  @include one;
+
+}
+
+.app__name{
+  font-size: 3rem;
+}
+
+
+.app__link_one:hover,.app__link_two:hover{
+  color: darkgrey;
+
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+  @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+}

@@ -1,27 +1,33 @@
 import React from "react";
 import "../styles/main.scss";
-import {Head_Top} from "./header";
+import {BrowserRouter, useNavigate} from "react-router-dom";
+import { Button } from "@mui/material";
 
 
 
      export function Main(){
+         const navigate = useNavigate();
+
+
+
+
          return (
 
              <section className="main_section">
 
                  <div className="main_section__div_one">
-                     <p>text1</p>
+                   <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
+                       className="button_apollo" onClick={ ()=> navigate("/apollo")}>Apollo 13</Button>
                  </div>
                  <div className="main_section__div_two">
-                     <p>text2</p>
+                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
+                         className="button_sojuz" onClick={ ()=> navigate("/sojuz-apollo")}>Sojuz-Apollo</Button>
                  </div>
                  <div className="main_section__div_three">
-                     <p>text3</p>
+                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
+                         className="button_spacex" onClick={ ()=> navigate("/spacex")}>Space-X</Button>
                  </div>
              </section>
-
-
-
 
          )
 
