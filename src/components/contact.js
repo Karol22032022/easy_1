@@ -10,7 +10,7 @@ export function ContactOne(){
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_lras5u9', 'template_jyyva5e', form.current, '37x_iIB2chXm9rWot')
+        emailjs.sendForm('service5u9', 'templateyva5e', form.current, '37x_iIB2chWot')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
