@@ -1,0 +1,21 @@
+
+
+.contact_form{
+
+  font-family: Goldman, cursive;
+  color:whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+ .contact_form_JS{
+   padding-top: 3rem;
+   display: flex;
+   flex-direction: column;
+ }
+  .info_about_mail_contact{
+    font-size: 3rem;
+  }
+
+}

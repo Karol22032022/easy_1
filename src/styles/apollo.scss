@@ -1,7 +1,9 @@
 
 .apollo{
   display: flex;
-
+align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
 
 
 }
@@ -12,21 +14,16 @@
   justify-content: center;
   align-items: center;
   text-align: justify;
-  max-width: 20rem;
+  max-width: 25rem;
   max-height: 45rem;
-  padding-left: 18rem;
-
-
 }
-
-
 
 .video_apollo{
   max-height: 30rem;
   max-width: 40rem;
   position: absolute ;
   margin-left: 4.5rem;
-  margin-top: 1.5rem;
+
 
 }
 .apollo_media{
@@ -36,6 +33,6 @@
 }
 .apollo_sign{
 padding-left: 17rem;
-  padding-top: 26rem;
+  padding-bottom: 20rem;
 
 }

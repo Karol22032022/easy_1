@@ -1,0 +1,36 @@
+
+.section_spacex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+ .spacex_text_about{
+
+   font-family: Goldman, cursive;
+   color:whitesmoke;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: justify;
+   max-width: 28rem;
+   max-height: 45rem;
+ }
+
+}
+.photo_and_video{
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  align-items: center;
+ .spacex_logo{
+   width: 30rem;
+
+
+ }
+}
+.video_spacex{
+  max-width: 20rem;
+  max-height: 20rem;
+
+}
+
