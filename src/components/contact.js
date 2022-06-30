@@ -10,7 +10,7 @@ export function ContactOne(){
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service5u9', 'templateyva5e', form.current, '37x_iIB2chWot')
+        emailjs.sendForm('x', 'x', form.current, 'x')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -31,7 +31,7 @@ export function ContactOne(){
                   ref={form} onSubmit={sendEmail}>
 
                 <label form="name">Name</label>
-                <input className="input_name" type="text" name="user_name" id="name" pattern=".{3,}" required/>
+                <input  className="input_name" type="text" name="user_name" id="name" pattern=".{3,}" required/>
                 <label form="email">Your email</label>
                 <input className="input_email" type="email" name="user_email" id="email" required/>
                 <label form="message">Message</label>
