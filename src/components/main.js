@@ -11,7 +11,12 @@ import {Button, colors} from "@mui/material";
 
 
          return (
+             <>
+             <p style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem', display:'flex', justifyContent:'center',
+             alignItems:'center'
+             }}>
 
+                 Increase your knowledge about subjects below</p>
              <section className="main_section">
 
                  <div className="main_section__div_one" style={{display:'flex',
@@ -38,7 +43,7 @@ import {Button, colors} from "@mui/material";
                          </Button>
                  </div>
              </section>
-
+             </>
          )
 
 

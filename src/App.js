@@ -18,8 +18,8 @@ function App() {
                 <nav className={"app_nav"}>
 
                     <Link className={"app__name"} to="/">SpaceOne</Link>
-                    <Link className={"app__link_one"} to="/" >Home</Link>
-                    <Link className={"app__link_two"} to="/contact" >Contact</Link>
+                    <Link className={"app__link_one"} style={{fontSize:'1.5rem'}} to="/" >Home</Link>
+                    <Link className={"app__link_two"} style={{fontSize:'1.5rem'}} to="/contact" >Contact</Link>
 
                 </nav>
 
