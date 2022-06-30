@@ -7,6 +7,9 @@ export function SojuzApollo(){
     return(
         <>
         <section className="th__apollo_section">
+            <video  autoPlay loop muted className="video_sojuz" typeof="video/mp4" src="https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2FApollo%20Soyuz.mp4?alt=media&token=a555a744-687a-46e2-9fc0-939abb04944f">
+
+            </video>
             <p className="th__apollo_text">
                 Apollo–Soyuz was the first crewed international space mission, carried out jointly by the United States and the Soviet Union in July 1975.
                 Millions of people around the world watched on television as a United States Apollo spacecraft docked with a Soviet Union Soyuz capsule.
@@ -23,15 +26,6 @@ export function SojuzApollo(){
                 and the last crewed United States spaceflight in a space capsule until Crew Dragon Demo-2 on May 30th, 2020.
 
             </p>
-            <div className="sojuz_media">
-
-                <video  autoPlay loop muted className="video_sojuz" typeof="video/mp4" src="https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2FApollo%20Soyuz.mp4?alt=media&token=a555a744-687a-46e2-9fc0-939abb04944f">
-
-                </video>
-
-
-
-            </div>
 
             <img style={{maxWidth:'15rem', maxHeight:'15rem'}} className="sojuz_sign" src={"https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fapollo%20sojuz.png?alt=media&token=5ef22a28-3820-4ddf-adfb-ceafd2614129"}>
 
