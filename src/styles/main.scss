@@ -46,6 +46,7 @@ text-decoration: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 6rem;
 
 &__div_one{
   @include standard;

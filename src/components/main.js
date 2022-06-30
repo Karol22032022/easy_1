@@ -12,8 +12,8 @@ import {Button, colors} from "@mui/material";
 
          return (
              <>
-             <p style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem', display:'flex', justifyContent:'center',
-             alignItems:'center'
+             <p  style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem', display:'flex', justifyContent:'center',
+             alignItems:'center', paddingTop:'2rem'
              }}>
 
                  Increase your knowledge about subjects below</p>

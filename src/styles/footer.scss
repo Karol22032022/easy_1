@@ -2,6 +2,26 @@
 
 
 .footer_one{
-  background-color: whitesmoke;
+
+  position: absolute;
+  right: 0;bottom:0;left:0;
+
+  margin-top: 5rem;
+  color: #919191;
+  display: flex;
+  font-family: Goldman, cursive;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-jeremy-bishop-2397413.jpg?alt=media&token=237479e3-d1d4-47bf-9d36-c61908b6bb1e");
+  background-size: cover;
+  .footer_about{
+    font-family: Goldman, cursive;
+    width: 40rem;
+    height: 4rem;
+    padding-left: 3rem;
+    text-align: justify;
+    color: #919191;
+  }
 
 }
+

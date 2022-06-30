@@ -6,13 +6,14 @@ import "./styles/app.scss";
 import {ApolloOne} from "./components/apollo";
 import {SojuzApollo} from "./components/apollo_one";
 import {Spacex} from "./components/spacex";
+import {Footer_One} from "./components/footer";
 
 function App() {
 
 
 
     return (
-
+<>
               <Router>
 
                 <nav className={"app_nav"}>
@@ -32,7 +33,8 @@ function App() {
                 </Routes>
 
             </Router>
-
+    <Footer_One/>
+</>
   );
 }
 
