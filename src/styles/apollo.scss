@@ -1,38 +1,76 @@
 
 .apollo{
   display: flex;
-align-items: center;
-  justify-content: center;
+flex-direction: row;
+justify-content: center;
   padding-top: 5rem;
+  @media(max-width: 1350px){
+    flex-direction: column;
+  }
 
 
 }
 .apollo_history{
   font-family: Goldman, cursive;
   color:whitesmoke;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
   text-align: justify;
   max-width: 25rem;
   max-height: 45rem;
+  @media(max-width: 1630px){
+    font-size: 0.75rem;
+    max-width: 35rem;
+    max-height: 20rem;
+    margin-right: 1rem;
+  }
+  @media(max-width: 1490px){
+    font-size: 0.45rem;
+    max-width: 35rem;
+    max-height: 20rem;
+    margin-right: 1rem;
+  }
 }
 
 .video_apollo{
   max-height: 30rem;
   max-width: 40rem;
-  position: absolute ;
+  position: relative ;
   margin-left: 4.5rem;
+  margin-right: 2rem;
+  @media(max-width: 1320px){
+   position: relative;
+   padding-left: 1rem;
+    width: 300px;
+    height: 150px;
+    margin-left:0;
+  }
 
 
 }
 .apollo_media{
-  display: flex;
+display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
   margin-bottom: 2rem;
+  @media(max-width: 1320px) {
+flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
 
+  }
 }
-.apollo_sign{
-padding-left: 17rem;
-  padding-bottom: 20rem;
 
+
+
+.apollo_sign{
+padding-left: 5rem;
+  margin-right: 6rem;
+  @media(max-width: 1320px){
+
+    width: 7rem;
+    height: 7rem;
+  }
 }
