@@ -8,6 +8,10 @@
   align-items: center;
   color: lightgrey;
   font-family: 'Goldman', cursive;
+  @media (max-width: 600px){
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
 }
 
 

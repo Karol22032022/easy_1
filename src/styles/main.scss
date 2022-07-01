@@ -10,8 +10,25 @@ text-decoration: none;
 }
 
 
-.apollo_param:hover, .sojuz_param:hover, .spacex_param:hover{
+.apollo_param:hover, .rus_param:hover, .spacex_param:hover{
   color: #b9b9b9;
+}
+
+@mixin resolution_one{
+  @media (max-width: 600px){
+    font-size: 0.5rem;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+}
+@mixin resolution_two{
+  @media (max-width: 200px ){
+    font-size: 0.5rem;
+    flex-direction: column;
+
+  }
+
 }
 
 @mixin standard{
@@ -31,6 +48,9 @@ text-decoration: none;
     }
     100% {
       transform: translateY(-100px);
+      @media(max-width: 600px){
+        transform: translateY(-50px);
+      }
     }
   }
   @keyframes slide-top {
@@ -41,10 +61,50 @@ text-decoration: none;
     100% {
 
       transform: translateY(+50px);
+
     }
   }
+
 }
+
+@mixin resolution_three{
+  @media (max-width: 600px){
+    width: 12.5rem;
+    height: 15.5rem;
+
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    @-webkit-keyframes slide-top {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100px);
+        @media(max-width: 600px){
+          transform: translateY(+50px);
+        }
+      }
+    }
+    @keyframes slide-top {
+      0% {
+
+        transform: translateY(0);
+      }
+      100% {
+
+        transform: translateY(+20px);
+
+      }
+    }
+
+  }
+
+
+}
+
+
 .main_section{
+
 
   display: flex;
   flex-direction: row;
@@ -54,6 +114,7 @@ text-decoration: none;
 
 &__div_one{
   @include standard;
+  @include resolution_three;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-pixabay-355956.jpg?alt=media&token=aca7024d-dfd1-4df0-8261-0cf017e15902");
 
 }
@@ -62,6 +123,7 @@ text-decoration: none;
     }
 &__div_two{
 @include standard;
+  @include resolution_three;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-pixabay-41005.jpg?alt=media&token=e8a2427f-53fc-41bf-ad95-5e6d9d660f21");
 
 }
@@ -70,6 +132,7 @@ text-decoration: none;
   }
 
   &__div_three{
+    @include resolution_three;
     @include standard;
     background-image: url("https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fpexels-dylan-spangler-12236235.jpg?alt=media&token=e4bc8535-22c4-4a00-b2ba-37fb3d6b1145");
   }
@@ -77,6 +140,34 @@ text-decoration: none;
     @include hover;
   }
 
+
+
+
+
+
   }
 
 
+
+  .param_main{
+    font-size: 2rem;
+    @media (max-width: 830px) {
+       font-size: 1rem;
+    }
+    @media (max-width: 420px){
+      font-size: 0.75rem;
+    }
+    @media (max-width: 310px){
+      font-size: 0.65rem;
+    }
+  }
+
+
+
+
+.apollo_param, .rus_param, .spacex_param{
+  font-size: 2rem;
+  @media (max-width: 600px){
+    font-size: 1rem;
+  }
+}

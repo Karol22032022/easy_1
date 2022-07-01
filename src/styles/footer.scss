@@ -22,6 +22,32 @@
     text-align: justify;
     color: #919191;
   }
-
+ .space_one_ha{
+   margin-left: 1rem;
+ }
 }
 
+@media(max-width: 600px){
+  .footer_one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+ .footer_about{
+   font-size: 0.25rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+
+}
+@media (max-width: 950px){
+  .inst_icon{
+     padding-left: 2.25rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+
+}

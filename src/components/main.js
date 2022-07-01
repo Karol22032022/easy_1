@@ -12,7 +12,7 @@ import {Button, colors} from "@mui/material";
 
          return (
              <>
-             <p  style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem', display:'flex', justifyContent:'center',
+             <p  className="param_main" style={{fontFamily:'Goldman, cursive', color:'whitesmoke', display:'flex', justifyContent:'center',
              alignItems:'center', paddingTop:'2rem'
              }}>
 
@@ -21,7 +21,7 @@ import {Button, colors} from "@mui/material";
 
                  <div className="main_section__div_one" style={{display:'flex',
                      justifyContent:'center', alignItems:'flex-start'}}>
-                   <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem'}}
+                   <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
                        className="main_section__button_apollo" onClick={ ()=> navigate("/apollo")}>
                        <p className="apollo_param"> Apollo 13</p>
 
@@ -30,14 +30,14 @@ import {Button, colors} from "@mui/material";
                  </div>
                  <div className="main_section__div_two" style={{display:'flex',
                      justifyContent:'center', alignItems:'flex-start'}}>
-                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem'}}
+                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
                          className="button_sojuz" onClick={ ()=> navigate("/sojuz-apollo")}>
-                         <p className="sojuz_param">Sojuz-Apollo</p>
+                         <p className="rus_param">Sojuz-Apollo</p>
                          </Button>
                  </div>
                  <div className="main_section__div_three" style={{display:'flex',
                      justifyContent:'center', alignItems:'flex-start'}}>
-                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke', fontSize:'2rem'}}
+                     <Button style={{fontFamily:'Goldman, cursive', color:'whitesmoke'}}
                          className="button_spacex" onClick={ ()=> navigate("/spacex")}>
                          <p className="spacex_param">Space-X</p>
                          </Button>
