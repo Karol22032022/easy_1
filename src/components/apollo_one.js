@@ -27,7 +27,7 @@ export function SojuzApollo(){
 
             </p>
 
-            <img style={{maxWidth:'15rem', maxHeight:'15rem'}} className="sojuz_sign" src={"https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fapollo%20sojuz.png?alt=media&token=5ef22a28-3820-4ddf-adfb-ceafd2614129"}>
+            <img  className="sojuz_sign" src={"https://firebasestorage.googleapis.com/v0/b/test-space-11914.appspot.com/o/space%2Fapollo%20sojuz.png?alt=media&token=5ef22a28-3820-4ddf-adfb-ceafd2614129"}>
 
             </img>
 
