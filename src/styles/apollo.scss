@@ -7,7 +7,10 @@ justify-content: center;
   @media(max-width: 1350px){
     flex-direction: column;
   }
+@media(max-width: 600px){
+  transform: translateY(-75px);
 
+}
 
 }
 .apollo_history{
@@ -25,10 +28,18 @@ justify-content: center;
     margin-right: 1rem;
   }
   @media(max-width: 1490px){
-    font-size: 0.45rem;
+    font-size: 0.65rem;
     max-width: 35rem;
     max-height: 20rem;
     margin-right: 1rem;
+  }
+  @media(max-width: 600px){
+
+    font-size: 0.5rem;
+  }
+  @media(max-width: 575px){
+
+    font-size: 0.3rem;
   }
 }
 
@@ -44,6 +55,11 @@ justify-content: center;
     width: 300px;
     height: 150px;
     margin-left:0;
+  }
+  @media(max-width: 600px){
+
+    max-width: 13rem;
+    max-height: 10rem;
   }
 
 
@@ -72,5 +88,10 @@ padding-left: 5rem;
 
     width: 7rem;
     height: 7rem;
+  }
+  @media(max-width: 600px){
+
+    width: 5rem;
+    height: 5rem;
   }
 }

@@ -1,14 +1,19 @@
 
 
-.th__apollo_section{
+.th__apollo_section {
   padding-top: 5rem;
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  @media(max-width: 1015px){
+    flex-direction: column-reverse;
+    display: flex;
+ padding-top: 0.15rem;
+  }
 
-  .th__apollo_text{
+  .th__apollo_text {
     font-family: Goldman, cursive;
-    color:whitesmoke;
+    color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,21 +21,52 @@ display: flex;
     max-width: 28rem;
     max-height: 45rem;
 
+
   }
+}
+
+.th__apollo_text{
+  @media (max-width: 1350px) {
+    font-size: 0.5rem ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @media (max-width: 470px) {
+    font-size: 0.4rem ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
 }
 
 .sojuz_sign{
 
   padding-right: 10rem;
   margin-left: 2rem;
+  max-width: 15rem;
+  max-height: 15rem;
+  @media(max-width: 1015px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8.5rem;
+    max-width: 5rem;
+    max-height: 5rem;
+
+
+  }
 
 }
 .video_sojuz{
   height: 20rem;
   width: 35rem;
   position: relative ;
-
-
+  margin-left: 0.25rem;
+  paddding-bottom: 1rem;
+  @media(max-width: 600px){
+    max-width: 15rem;
+    max-height: 10rem;
+  }
 
 }
 
